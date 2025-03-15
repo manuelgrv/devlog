@@ -2,20 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ----------------------------------------------------
+   Light Theme (attach .light to <html> or <body>)
+   ---------------------------------------------------- */
+.light body {
+  @apply bg-gruvbox-light0 text-gruvbox-dark2
+         transition-colors duration-200;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6 {
+  @apply font-semibold;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.light a,
+.light b,
+.light strong {
+  @apply text-gruvbox-faded_blue;
+}
+.light a:hover {
+  @apply text-gruvbox-faded_aqua;
+}
+
+/* ----------------------------------------------------
+   Dark Theme (attach .dark to <html> or <body>)
+   ---------------------------------------------------- */
+.dark body {
+  @apply bg-gruvbox-dark0 text-gruvbox-light2
+         transition-colors duration-200;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  @apply font-semibold;
+}
+
+.dark a,
+.dark b,
+.dark strong {
+  @apply text-gruvbox-bright_red;
+}
+.dark a:hover {
+  @apply text-gruvbox-bright_orange;
 }

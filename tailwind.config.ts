@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import gruvboxColors from "./gruvbox-colors";
 
 export default {
   content: [
@@ -9,10 +10,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        gruvbox: gruvboxColors,
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [require("@tailwindcss/line-clamp")],
 } satisfies Config;
