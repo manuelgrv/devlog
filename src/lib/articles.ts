@@ -75,7 +75,7 @@ export function getArticleList(): Record<number, ArticleCardData[]> {
 
 // Returns array of the 4 most recent articles to show on the home page + featured articles.
 export function getLatestArticleList(): Record<number, ArticleCardData[]> {
-  let latestArticles = getArticleList()["1"].slice(0, 4);
+  const latestArticles = getArticleList()["1"].slice(0, 4);
   return paginateArray(latestArticles, 6);
 }
 

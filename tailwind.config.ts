@@ -18,5 +18,4 @@ export default {
     },
   },
   darkMode: "class",
-  plugins: [require("@tailwindcss/line-clamp")],
 } satisfies Config;

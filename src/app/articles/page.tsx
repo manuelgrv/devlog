@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { getArticleList } from "@/lib";
 
 export default function Articles(): ReactElement {
-  let records = getArticleList();
+  const records = getArticleList();
 
   return (
     <AnimateEntrance>

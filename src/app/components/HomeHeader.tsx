@@ -1,5 +1,4 @@
 import { Container } from "@/components";
-import Link from "next/link";
 import Avatar from "./Avatar";
 import clsx from "clsx";
 

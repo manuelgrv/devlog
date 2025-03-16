@@ -14,7 +14,7 @@ export default function ArticleGrid({
   articles,
   home,
 }: ArticlesProps): ReactElement {
-  let [page, setPage] = useState(1);
+  const [page, setPage] = useState(1);
 
   const pageList = Object.keys(articles).map(Number);
   const totalPages = pageList.length;

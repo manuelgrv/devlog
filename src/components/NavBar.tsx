@@ -89,7 +89,7 @@ export default function NavBar(): React.ReactElement {
   }, []);
 
   useEffect(() => {
-    function handleClickOutside(event: any) {
+    function handleClickOutside(event) {
       if (menuActive.current && !menuActive.current.contains(event.target)) {
         setOpen(false);
       }
@@ -126,7 +126,6 @@ export default function NavBar(): React.ReactElement {
         )}
       >
         {/*Left Column*/}
-
         <div className="w-1/2 sm:w-1/3 flex flex-nowrap pl-3">
           <span className="text-left px-1">
             <Link

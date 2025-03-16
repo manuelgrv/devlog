@@ -61,8 +61,8 @@ export default function ArticleCard({
           {/* TODO: Make tags to be filters for Articles page. */}
           <div className="text-xs text-opacity-50 flex flex-nowrap space-x-2">
             {tags.map((tag: string, idx: number, tl: string[]) => {
-              let len = tl.length - 1;
-              let sep = idx == len ? "" : "\u00B7";
+              const len = tl.length - 1;
+              const sep = idx == len ? "" : "\u00B7";
               return (
                 <div className="flex flex-nowrap space-x-2" key={idx}>
                   <span className="underline decoration-dotted">{`#${tag}`}</span>
