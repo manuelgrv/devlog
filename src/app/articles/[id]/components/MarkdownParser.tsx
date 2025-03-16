@@ -1,6 +1,5 @@
 "use client";
 import "katex/dist/katex.min.css";
-import "highlight.js/styles/atom-one-dark.css";
 import { ArticleData } from "@/lib";
 import { Admonition, YoutubeVideo } from "./";
 import Markdown from "react-markdown";
