@@ -20,13 +20,13 @@ export default function Footer(): ReactElement {
         </div>
         <div className="w-1/2 flex flex-nowrap justify-end px-3">
           <div className="flex flex-nowrap space-x-4">
-            <Link href="/">
+            <Link href="https://www.github.com/manuelgrv" target="_blank">
               <GithubIcon size={16} />
             </Link>
-            <Link href="/">
+            <Link href="https://www.linkedin.com/in/mgrv" target="_blank">
               <LinkedinIcon size={16} />
             </Link>
-            <Link href="/">
+            <Link href="https://www.x.com/grv0x" target="_blank">
               <TwitterIcon size={16} />
             </Link>
           </div>

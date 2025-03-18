@@ -74,7 +74,7 @@ export default function NavBar(): React.ReactElement {
   const linkList = [
     { text: "Home", link: "/" },
     { text: "Articles", link: "/articles" },
-    { text: "Vault", link: "/" },
+    { text: "Vault", link: "https://vault.mgrv.dev" },
   ];
 
   useEffect(() => {
@@ -142,7 +142,7 @@ export default function NavBar(): React.ReactElement {
         {/*Right Column*/}
         <div className="w-1/2 sm:w-1/3 text-right flex-nowrap justify-between space-x-1">
           <a
-            href="https://www.github.com/manuelrodval"
+            href="https://www.github.com/mgrv/devlog"
             target="_blank"
             className="text-gruvbox-dark2 dark:text-gruvbox-light2 cursor-pointer"
           >
